@@ -6,8 +6,11 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: #f4f6f8;
+    overflow-x:hidden ;
+    width: 100%;
 }
-header{
+
+header {
     display: grid;
     grid-template-columns: 30% 70%;
     background-color: #ffffff;
@@ -15,15 +18,86 @@ header{
     padding-block: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
-.logo-context h4{
-font-weight: 300;
+
+.logo-context h4 {
+    font-weight: 300;
 }
 
-.heading{
+.heading {
     padding: 0 15%;
     text-align: center;
 }
-.heading h1{
+
+.heading h1 {
     font-size: 45px;
     line-height: 1.2;
+}
+
+.heading-image {
+    margin: 0 15%;
+ 
+}
+.heading-image img{
+    width: 100%;
+}
+.introduction{
+    padding: 0 15%;
+    padding-block: 20px;
+}
+
+.pros {
+    padding: 0 15%;
+    padding-block: 20px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.cons {
+    padding: 0 15%;
+    padding-block: 20px;
+}
+.conclusion{
+    padding: 0 15%;
+    padding-block: 20px;
+}
+footer {
+    background-color: #ffffff;
+    padding-block: 50px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    width: 100%;
+}
+
+@media (max-width: 1268px) {
+header{
+    display: block;
+}
+.logo{
+display: flex;
+justify-content: center;
+align-items: center;
+align-items: center;
+}
+.heading h1{
+    font-size: 20px;
+}
+.heading-image{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+
+}
+.heading-image img{
+    width: 100%;
+    text-align: center;
+    margin: 0 5%;
+}
+/* .logo img{
+    width: 250px;
+} */
 }
